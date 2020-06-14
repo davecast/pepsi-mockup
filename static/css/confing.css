@@ -1,6 +1,7 @@
 :root {
   --blue-light: #3a88ce;
   --blue-dark: #2151a1;
+  --blue-black: #143676;
   --red: #eb1933;
   --white: #ffffff;
   --black: #000000;
@@ -8,10 +9,16 @@
 }
 
 body {
+  height: 100vh;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   margin: 0;
   background-color: var(--blue-dark);
-  color: var(--white);
 }
+
 /*font-family: 'Montserrat', sans-serif;*/
+
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+}
