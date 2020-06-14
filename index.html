@@ -1,55 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pepsi | Redesign Brand</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./static/css/main.css">
-</head>
-<body>  
-  <header class="header">
-    <div class="container">
-      <div class="header__content">
-        <a href="/" class="logo">
-          <img src="./static/img/logo.png" alt="pepsi">
-        </a>
-        <nav class="menu">
-          <ul>
-            <li>
-              <a href="#">products</a>
-            </li>
-            <li>
-              <a href="#">what's news</a>
-            </li>
-            <li>
-              <a href="#">newsletter</a>
-            </li>
-            <li>
-              <a href="#">contact us</a>
-            </li>
-          </ul>
-        </nav>
-        <a href="#" class="btn btn--small">
-          buy products
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="container">
-      <div class="hero__content">
-        <div class="hero__detail">
-          <h2 class="hero__title">get more with pepsi</h2>
-          <p class="hero__description">All Your Favorite Flavors. The gang's all here. Compare flavors, get nutritional facts and check out ingredients for all our Pepsi products.</p>
-          <a href="" class="btn">
-            view products
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pepsi | Redesign Brand</title>
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./static/css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a href="/" class="logo">
+            <img src="./static/img/logo.png" alt="pepsi" />
+          </a>
+          <nav class="menu">
+            <ul>
+              <li>
+                <a href="#">products</a>
+              </li>
+              <li>
+                <a href="#">what's news</a>
+              </li>
+              <li>
+                <a href="#">newsletter</a>
+              </li>
+              <li>
+                <a href="#">contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="btn btn--small">
+            buy products
           </a>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-</body>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <ul class="hero__social">
+            <li><a href="#"><i class="p-instagram-brands"></i></a></li>
+            <li><a href="#"><i class="p-youtube-brands"></i></a></li>
+            <li><a href="#"><i class="p-twitter-brands"></i></a></li>
+            <li><a href="#"><i class="p-facebook-brands"></i></a></li>
+          </ul>
+          <div class="hero__detail">
+            <h2 class="hero__title">get more with pepsi</h2>
+            <p class="hero__description">
+              All Your Favorite Flavors. The gang's all here. Compare flavors,
+              get nutritional facts and check out ingredients for all our Pepsi
+              products.
+            </p>
+            <a href="" class="btn">
+              view products
+            </a>
+          </div>
+          <div class="hero__dots">
+            <div class="hero__dot hero__dot--active">
+              <p class="hero__dot--number">01</p>
+              <div class="hero__dot--bar"></div>
+            </div>
+            <div class="hero__dot">
+              <div class="hero__dot--bar"></div>
+              <p class="hero__dot--number">02</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brand">
+      <div class="brand__content">
+        <div class="brand__slider__actions">
+          <div class="slider__btn">
+            <i class="p-chevron-left"></i>
+          </div>
+          <div class="slider__btn slider__btn--dark">
+            <i class="p-chevron-right"></i>
+          </div>
+        </div>
+        <div class="brand__style">
+          <div class="brand__style--content">
+            <h3 class="title__section">
+              never go out of style
+            </h3>
+            <p class="text__section">
+              Enjoy a taste of Pepsi's world with an exclusive look, into music,
+              sports, and ,entertainment. (link:
+              <a class="dark" href="">http://pepsi.com</a>) Pepsi.com Follow us
+              on instagram.
+            </p>
+          </div>
+          <figure class="brand__style--bottle">
+            <img src="./static/img/bottellaplastica.png" alt="pepsi" />
+          </figure>
+        </div>
+        <div class="brand__diet">
+          <div class="brand__diet--back"><span>0</span>cal</div>
+          <h3 class="title__section title__section--white">
+            diet pepsi
+          </h3>
+          <p class="text__section text__section--white">
+            A no-calories carbonated cola soft drink produced by PepsiCo,
+            introduced in 1964 as a variant of Pepsi with no sugar
+          </p>
+        </div>
+        <div class="brand__history">
+          <button class="brand__history--video">
+            <i class="p-caret-right-solid"></i>
+          </button>
+          <h3 class="title__section title__section--white">
+            pepsi history
+          </h3>
+          <p class="text__section text__section--white">
+            Pepsi was first introduced as "brad's Drink" in New Bern, US, in
+            1893 by Caleb Bradham, who made and sold it at his drugstore
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

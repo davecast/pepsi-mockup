@@ -1,0 +1,25 @@
+.brand__slider__actions {
+  grid-area: slider;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.slider__btn {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue-light);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.slider__btn--dark {
+  background-color: var(--blue-dark);
+}
+.slider__btn i {
+  transition: all 0.3s ease-in-out;
+}
+.slider__btn:hover i {
+  transform: scale(1.5);
+}

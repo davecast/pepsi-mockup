@@ -10,15 +10,22 @@
 
 body {
   height: 100vh;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin: 0;
   background-color: var(--blue-dark);
   color: var(--white);
-  background-image: url(../img/pepsi.png), linear-gradient(35deg, var(--blue-black) 25%, var(--blue-dark) 65%, var(--blue-light) 100%);
+  background-image: url(../img/pepsi.png),
+    linear-gradient(
+      35deg,
+      var(--blue-black) 25%,
+      var(--blue-dark) 65%,
+      var(--blue-light) 100%
+    );
   background-repeat: no-repeat;
-  background-size: 700px, auto ;
-  background-position: calc(calc(calc( 100vw - 1350px) / 2) + 430px) 100px, center;
+  background-size: 700px, auto;
+  background-position: calc(calc(calc(100vw - 1350px) / 2) + 430px) 100px,
+    center;
 }
 
 /*font-family: 'Montserrat', sans-serif;*/
@@ -26,4 +33,33 @@ body {
 .container {
   max-width: 1350px;
   margin: 0 auto;
+}
+
+.title__section {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 0 0 25px;
+  color: var(--black);
+  text-transform: uppercase;
+}
+.title__section--white {
+  color: var(--white);
+}
+.text__section {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--grey-dark);
+}
+.text__section--white {
+  color: var(--white);
+}
+.text__section a {
+  text-decoration: none;
+}
+.text__section a:hover {
+  opacity: 0.8;
+}
+.text__section a.dark {
+  color: var(--black);
 }

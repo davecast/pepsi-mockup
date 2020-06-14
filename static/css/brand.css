@@ -1,5 +1,87 @@
-.brand {}
-.brand__content {}
-.brand__style {}
-.brand__diet {}
-.brand__history {}
+.brand__content {
+  height: calc(100vh - 600px);
+  display: grid;
+  grid-template: 65px 1fr / 1fr 1fr 360px calc(
+      calc(calc(100vw - 1350px) / 2) + 370px
+    );
+  grid-template-areas:
+    "slider slider diet history"
+    "style style diet history";
+}
+.brand__style {
+  grid-area: style;
+  background-color: var(--white);
+  padding-left: calc(calc(100vw - 1350px) / 2);
+  padding-top: 60px;
+  display: grid;
+  grid-template: 1fr / 400px 1fr;
+  overflow: hidden;
+}
+.brand__style--bottle {
+  max-width: 120px;
+  margin: 0;
+  font-size: 0;
+  justify-self: end;
+  padding-right: 40px;
+}
+.brand__style--bottle img {
+  max-width: 100%;
+}
+.brand__diet {
+  grid-area: diet;
+  background-color: var(--black);
+  padding: 65px 55px 0 70px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.brand__diet--back {
+  position: absolute;
+  font-size: 90px;
+  font-weight: 700;
+  left: -50px;
+  bottom: 0;
+  opacity: 0.2;
+  z-index: 1;
+}
+.brand__diet--back span {
+  font-size: 280px;
+  font-weight: 700;
+}
+.brand__diet p {
+  opacity: 0.6;
+}
+.brand__history {
+  grid-area: history;
+  background-color: var(--blue-light);
+  padding: 65px calc(calc(calc(100vw - 1350px) / 2) + 70px) 0 70px;
+  position: relative;
+}
+.brand__history--video {
+  padding: 0;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  outline: none;
+  border: none;
+  background-color: var(--blue-light);
+  color: var(--white);
+  font-size: 38px;
+  line-height: 35px;
+  border-radius: 50%;
+  left: -50px;
+  top: -50px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.brand__history--video:hover {
+  transform: translateY(-5px);
+  box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.2);
+}
+.brand__history--video:active {
+  transform: translateY(0px);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  background-color: var(--blue-dark);
+}
