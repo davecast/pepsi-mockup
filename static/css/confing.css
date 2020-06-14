@@ -14,6 +14,11 @@ body {
   font-size: 16px;
   margin: 0;
   background-color: var(--blue-dark);
+  color: var(--white);
+  background-image: url(../img/pepsi.png), linear-gradient(35deg, var(--blue-black) 25%, var(--blue-dark) 65%, var(--blue-light) 100%);
+  background-repeat: no-repeat;
+  background-size: 700px, auto ;
+  background-position: calc(calc(calc( 100vw - 1350px) / 2) + 400px) 100px, center;
 }
 
 /*font-family: 'Montserrat', sans-serif;*/
