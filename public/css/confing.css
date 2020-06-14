@@ -1,0 +1,17 @@
+:root {
+  --blue-light: #3a88ce;
+  --blue-dark: #2151a1;
+  --red: #eb1933;
+  --white: #ffffff;
+  --black: #000000;
+  --grey-dark: #a2a2a2;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background-color: var(--blue-dark);
+  color: var(--white);
+}
+/*font-family: 'Montserrat', sans-serif;*/

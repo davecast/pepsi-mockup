@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../webfonts/icomoon.eot');
+  src:  url('../webfonts/icomoon.eot') format('embedded-opentype'),
+    url('../webfonts/icomoon.ttf') format('truetype'),
+    url('../webfonts/icomoon.woff') format('woff'),
+    url('../webfonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="p-"], [class*=" p-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.p-youtube-brands:before {
+  content: "\e909";
+}
+.p-caret-right-solid:before {
+  content: "\e90a";
+}
+.p-facebook-brands:before {
+  content: "\e90b";
+}
+.p-heart:before {
+  content: "\e90c";
+}
+.p-instagram-brands:before {
+  content: "\e90d";
+}
+.p-twitter-brands:before {
+  content: "\e90e";
+}
+.p-wordl:before {
+  content: "\e904";
+}
+.p-user:before {
+  content: "\e905";
+}
+.p-chevron-left:before {
+  content: "\e906";
+}
+.p-chevron-right:before {
+  content: "\e907";
+}
+.p-mark:before {
+  content: "\e908";
+}
+.p-long-arrow-left:before {
+  content: "\e900";
+}
+.p-moon-dark:before {
+  content: "\e901";
+}
+.p-moon-light:before {
+  content: "\e902";
+}
+.p-search:before {
+  content: "\e903";
+}
