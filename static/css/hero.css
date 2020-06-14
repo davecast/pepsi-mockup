@@ -1,0 +1,23 @@
+.hero__content {
+  height: 600px;
+  display: grid;
+  grid-template: 1fr / 525px 1fr;
+}
+.hero__detail {
+  padding-left: 120px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  align-self: end;
+}
+.hero__title {
+  font-size: 70px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  margin: 0 0 20px;
+}
+.hero__description {
+  font-size: 16px;
+  line-height: 25px;
+  opacity: 0.8;
+  margin-bottom: 45px;
+}

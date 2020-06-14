@@ -1,5 +1,11 @@
 .header {
   padding-top: 40px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  top: 0;
+  box-sizing: border-box;
 }
 .header__content {
   height: 60px;
