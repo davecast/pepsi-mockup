@@ -89,9 +89,10 @@
 .brand__history--video:hover {
   transform: translateY(-5px);
   box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.2);
+  background-color: var(--blue-dark);
 }
 .brand__history--video:active {
   transform: translateY(0px);
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-  background-color: var(--blue-dark);
+  background-color: var(--blue-black);
 }

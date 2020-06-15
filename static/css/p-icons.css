@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.p-closed:before {
+  content: "\e90f";
+}
 .p-youtube-brands:before {
   content: "\e909";
 }

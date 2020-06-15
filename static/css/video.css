@@ -1,0 +1,42 @@
+.video__wrapper {
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.getUp {
+  z-index: 20;
+}
+.video__wrapper i {
+  cursor: pointer;
+  position: absolute;
+  top: -40px;
+  right: calc(calc(100vw - 1350px) / 2);
+  font-size: 28px;
+  line-height: 28px;
+}
+.video__wrapper i:hover {
+  transform: scale(1.5);
+  color: var(--red);
+  opacity: 0.6;
+}
+.video__wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+}
+.video__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(0deg, var(--black) 0%, var(--blue-light) 100%);
+  opacity: 0.5;
+}

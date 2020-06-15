@@ -1,6 +1,13 @@
 
 
 /*video in*/
+.video__in video {
+  transition: opacity 0.5s ease-in 0.3s;
+}
+.video__in .video__wrapper i {
+  transition: transform 0.3s ease-in, top 0.3s ease-in 0.2s, opacity 0.2s ease-in 0.25s;
+}
+
 /*header*/
 .video__in .logo {
   transition: transform 0.3s ease-in, opacity 0.2s ease-in 0.1s;
@@ -39,43 +46,64 @@
 .video__in .brand__history {
   transition: transform 0.3s ease-in 0.15s, opacity 0.2s ease-in 0.25s;
 }
+.video__in .brand__history--video {
+  transition: transform 0.3s ease-in 0.2s, opacity 0.2s ease-in 0.3s;
+}
 
-/*video out*/
 /*header*/
 .video__out .logo {
-  transition: transform 0.3s ease-in 0.1s, opacity 0.2s ease-in 0.2s;
+  transition: transform 0.3s ease-in 0.2s, opacity 0.2s ease-in 0.25s;
 }
 .video__out .menu {
-  transition: transform 0.3s ease-in 0.05s, opacity 0.2s ease-in 0.15s;
+  transition: transform 0.3s ease-in 0.15s, opacity 0.2s ease-in 0.2s;
 }
 .video__out .header .btn {
-  transition: transform 0.3s ease-in, opacity 0.2s ease-in 0.1s;
+  transition: transform 0.3s ease-in 0.1, opacity 0.2s ease-in 0.15s;
 }
 /*hero*/
 .video__out .hero__look {
-  transition: transform 0.3s ease-in 0.1s, opacity 0.2s ease-in 0.2s
+  transition: transform 0.3s ease-in 0.2s, opacity 0.2s ease-in 0.3s
 }
 .video__out .hero__social {
-  transition: transform 0.3s ease-in 0.05s, opacity 0.2s ease-in 0.15s;
+  transition: transform 0.3s ease-in 0.15s, opacity 0.2s ease-in 0.25s;
 }
 .video__out .hero__dots {
-  transition: transform 0.3s ease-in 0.05s, opacity 0.2s ease-in 0.15s;
+  transition: transform 0.3s ease-in 0.1s, opacity 0.2s ease-in 0.2s;
 }
 .video__out .hero__detail {
-  transition: transform 0.3s ease-in, opacity 0.2s ease-in 0.1s;
+  transition: transform 0.3s ease-in, opacity 0.25s ease-in 0.15s;
 }
 /*brand*/
 .video__out .brand__slider__actions {
-  transition: transform 0.3s ease-in 0.15s, opacity 0.2s ease-in 0.25s;
+  transition: transform 0.3s ease-in 0.2s, opacity 0.2s ease-in 0.3s;
 }
 .video__out .brand__style {
-  transition: transform 0.3s ease-in 0.1s, opacity 0.2s ease-in 0.2s;
+  transition: transform 0.3s ease-in 0.15s, opacity 0.2s ease-in 0.25s;
 }
 .video__out .brand__diet {
-  transition: transform 0.3s ease-in 0.05s, opacity 0.2s ease-in 0.15s;
+  transition: transform 0.3s ease-in 0.1s, opacity 0.2s ease-in 0.2s;
 }
 .video__out .brand__history {
-  transition: transform 0.3s ease-in, opacity 0.2s ease-in 0.1s;
+  transition: transform 0.3s ease-in, opacity 0.25s ease-in 0.15s;
+}
+.video__in .brand__history--video {
+  transition: transform 0.3s ease-in, opacity 0.25s ease-in 0.15s;
+}
+
+
+/*.video__in video {
+  opacity: 1;
+}
+*/
+
+/*action*/
+.video__in .video__wrapper video {
+  opacity: 1;
+}
+.video__in .video__wrapper i {
+  top: 40px;
+  opacity: 1;
+  z-index: 999;
 }
 
 .video__in .brand__slider__actions,
@@ -83,6 +111,10 @@
 .video__in .brand__diet,
 .video__in .brand__history {
   transform: translateY(250px);
+  opacity: 0;
+}
+.video__in .brand__history--video {
+  transform: translateY(-350px);
   opacity: 0;
 }
 .video__in .logo,
@@ -106,11 +138,19 @@
   opacity: 0;
 }
 
+.video__out video {
+  opacity: 0;
+}
+.video__out .video__wrapper i {
+  top: -100px;
+  opacity: 0;
+}
 
 .video__out .brand__slider__actions,
 .video__out .brand__style,
 .video__out .brand__diet,
-.video__out .brand__history {
+.video__out .brand__history,
+.video__out .brand__history--video {
   transform: translateY(0px);
   opacity: 1;
 }
@@ -120,21 +160,20 @@
   transform: translateY(0px);
   opacity: 1;
 }
-..video__out .hero__look {
+.video__out .hero__look {
   transform: translateY(0);
   opacity: 1;
 }
-..video__out .hero__social,
-..video__out .hero__detail {
+.video__out .hero__social,
+.video__out .hero__detail {
   transform: translateX(0);
   opacity: 1;
 }
-..video__out .hero__dots {
+.video__out .hero__dots {
   transform: translateX(0);
   opacity: 1;
 }
 
-/*out*/
 .video__out .brand__slider__actions {
   animation: outvideo 0.3s ease-in 0.15s forwards;
 }
