@@ -1,3 +1,10 @@
+.brand {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+}
 .brand__content {
   height: calc(100vh - 600px);
   display: grid;
@@ -9,6 +16,7 @@
     "style style diet history";
 }
 .brand__style {
+  z-index: 5;
   grid-area: style;
   background-color: var(--white);
   padding-left: calc(calc(100vw - 1350px) / 2);
@@ -28,6 +36,7 @@
   max-width: 100%;
 }
 .brand__diet {
+  z-index: 5;
   grid-area: diet;
   background-color: var(--black);
   padding: 65px 55px 0 70px;
@@ -53,6 +62,7 @@
   opacity: 0.6;
 }
 .brand__history {
+  z-index: 5;
   grid-area: history;
   background-color: var(--blue-light);
   padding: 65px calc(calc(calc(100vw - 1350px) / 2) + 70px) 0 70px;

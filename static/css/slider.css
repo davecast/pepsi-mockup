@@ -1,4 +1,5 @@
 .brand__slider__actions {
+  z-index: 5;
   grid-area: slider;
   display: flex;
   justify-content: flex-end;
