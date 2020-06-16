@@ -129,6 +129,9 @@
   opacity: 1;
   transition: transform 0.3s ease-in, opacity 0.3s ease-in;
 }
+.hero__detail--in .btn {
+  opacity: 0.6;
+}
 .hero__detail--in .hero__description {
   transition-delay: 0.05s;
 }

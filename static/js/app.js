@@ -92,6 +92,8 @@ class Slide {
     } else {
       this.initialState = this.getPosition("sum")
     }
+    this.changeDot(this.initialState);
+
     this.$heroDetail.classList.remove("hero__detail--in");
     this.$heroDetail.classList.add("hero__detail--out");
 
@@ -108,7 +110,16 @@ class Slide {
     }, 400)
     
   }
-
+  changeDot(dot) {
+    let $currentDot = document.querySelector(".hero__dot--active");
+    $currentDot.classList.remove("hero__dot--active");
+        
+    if (dot == 1) {
+      this.$dotLeft.classList.add("hero__dot--active");
+    } else {
+      this.$dotRight.classList.add("hero__dot--active");
+    }
+  }
   automaticSlide() {
     this.isInterval = setInterval(() => {
       this.changeSlide("right");
