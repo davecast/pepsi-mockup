@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "images":  "./static/img/pepsi.png",
+    "title": "Get More With Pepsi",
+    "description": "All Your Favorite Flavors. The gang's all here. Compare flavors, get nutritional facts and check out ingredients for all our Pepsi products.",
+    "btn": "view products" 
+  },
+  {
+    "id": 2,
+    "images":  "./static/img/pepsibottella.png",
+    "title": "That's i like",
+    "description": "What does not matter is that you are as you want, that's why  we always give more.",
+    "btn": "what's news"
+  }
+]

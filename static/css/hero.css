@@ -97,3 +97,41 @@
   background-color: var(--white);
   margin: 0 auto;
 }
+.hero__look--out {
+  transform: translateX(80px);
+  opacity: 0;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+.hero__detail--out .hero__description, 
+.hero__detail--out .btn, 
+.hero__detail--out .hero__title {
+  transform: translateX(-80px);
+  opacity: 0;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+.hero__detail--out .hero__description {
+  transition-delay: 0.05s;
+}
+.hero__detail--out .btn {
+  transition-delay: 0.1s;
+}
+
+.hero__look--in {
+  transform: translateX(0px);
+  opacity: 1;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.hero__detail--in .hero__description, 
+.hero__detail--in .btn, 
+.hero__detail--in .hero__title {
+  transform: translateX(0px);
+  opacity: 1;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+.hero__detail--in .hero__description {
+  transition-delay: 0.05s;
+}
+.hero__detail--in .btn {
+  transition-delay: 0.1s;
+}

@@ -87,7 +87,7 @@
   transition: transform 0.3s ease-in, opacity 0.25s ease-in 0.15s;
 }
 .video__in .brand__history--video {
-  transition: transform 0.3s ease-in, opacity 0.25s ease-in 0.15s;
+  transition: transform 0.3s ease-in, opacity 0.2s ease-in 0.1s;
 }
 
 
